@@ -1,81 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-WB3JMQS2');</script>
-    <!-- End Google Tag Manager -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WB3JMQS2');</script>
+<!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PetParadise - Home</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Paws & Whiskers - Your Pet's Paradise</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-image: url('https://placehold.co/1200x600/e2e8f0/64748b?text=Happy+Pets');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
 </head>
-<body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WB3JMQS2"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <header>
-        <nav>
-            <h1>PetParadise</h1>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="cart.html">Cart</a></li>
-            </ul>
+<body class="bg-gray-100 text-gray-800">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WB3JMQS2"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold text-orange-500">Paws & Whiskers</a>
+            <div class="flex items-center space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-orange-500 transition duration-300">Home</a>
+                <a href="#" class="text-gray-600 hover:text-orange-500 transition duration-300">About</a>
+                <a href="cart.html" id="cart-button" class="bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition duration-300 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                    Cart
+                </a>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <section class="hero">
-            <h2>Welcome to PetParadise!</h2>
-            <p>Your one-stop shop for all your pet's needs.</p>
-            <!-- Button for tracking a click event to encourage shopping -->
-            <a href="shop.html" class="button" id="hero_shop_now_button">Shop Now</a>
-        </section>
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
 
-        <section class="featured-products">
-            <h2>Featured Items</h2>
-            <div class="product-grid">
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/200x200?text=Product+1" alt="Premium Dog Food">
-                    <h3>Premium Dog Food</h3>
-                    <p>$29.99</p>
-                    <!-- Button for tracking an add_to_cart event -->
-                    <button class="button add-to-cart-button" id="home_add_to_cart_1">Add to Cart</button>
-                    <!-- Button for tracking a click event to view details -->
-                    <a href="product-detail.html?id=1" class="button view-detail-button" id="home_view_detail_1">View Details</a>
-                </div>
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/200x200?text=Product+2" alt="Cat Scratcher Post">
-                    <h3>Cat Scratcher Post</h3>
-                    <p>$19.99</p>
-                    <!-- Button for tracking an add_to_cart event -->
-                    <button class="button add-to-cart-button" id="home_add_to_cart_2">Add to Cart</button>
-                    <!-- Button for tracking a click event to view details -->
-                    <a href="product-detail.html?id=2" class="button view-detail-button" id="home_view_detail_2">View Details</a>
-                </div>
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/200x200?text=Product+3" alt="Bird Cage">
-                    <h3>Bird Cage</h3>
-                    <p>$49.99</p>
-                    <!-- Button for tracking an add_to_cart event -->
-                    <button class="button add-to-cart-button" id="home_add_to_cart_3">Add to Cart</button>
-                    <!-- Button for tracking a click event to view details -->
-                    <a href="product-detail.html?id=3" class="button view-detail-button" id="home_view_detail_3">View Details</a>
-                </div>
+        <!-- Hero Section -->
+        <section class="hero-bg h-96 rounded-lg flex items-center justify-center text-center text-white mb-16">
+            <div class="bg-black bg-opacity-40 p-8 rounded-lg">
+                <h1 class="text-5xl font-bold mb-4">Everything Your Pet Deserves</h1>
+                <p class="text-xl">High-quality food, toys, and accessories.</p>
             </div>
         </section>
+
+        <!-- Featured Products Section -->
+        <section id="pet-products" class="mb-16">
+            <h2 class="text-4xl font-bold mb-8 text-center text-gray-700">Featured Products</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                
+                <!-- Product Card 1: Food -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://placehold.co/400x300/f97316/ffffff?text=Premium+Dog+Food" alt="Dog Food" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Premium Dog Kibble</h3>
+                        <p class="text-gray-600 mb-4">All-natural ingredients for a healthy, happy dog.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-orange-500">$59.99</span>
+                            <button id="add-to-cart-food1" class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2: Food -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://placehold.co/400x300/3b82f6/ffffff?text=Savory+Cat+Food" alt="Cat Food" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Savory Cat Pâté</h3>
+                        <p class="text-gray-600 mb-4">A delicious meal for your feline friend.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-orange-500">$24.99</span>
+                            <button id="add-to-cart-food2" class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3: Toy -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://placehold.co/400x300/ef4444/ffffff?text=Chew+Toy" alt="Chew Toy" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Durable Dog Chew Toy</h3>
+                        <p class="text-gray-600 mb-4">Built to last, for the most enthusiastic chewers.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-orange-500">$12.99</span>
+                            <button id="add-to-cart-toy1" class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 4: Toy -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://placehold.co/400x300/22c55e/ffffff?text=Cat+Wand" alt="Cat Wand" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Feather Cat Wand</h3>
+                        <p class="text-gray-600 mb-4">Hours of interactive fun for you and your cat.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-orange-500">$7.99</span>
+                            <button id="add-to-cart-toy2" class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
     </main>
 
-    <footer>
-        <p>&copy; 2025 PetParadise. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Paws & Whiskers. All Rights Reserved.</p>
+            <p class="text-sm text-gray-400 mt-2">Your one-stop shop for everything your pet needs.</p>
+        </div>
     </footer>
 
-    <!-- Link to the tracking script for page_view, scroll, and click events -->
-    <script src="js/tracking.js"></script>
 </body>
 </html>
